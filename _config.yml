@@ -1,7 +1,7 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: pretty
-paginate: 1
+paginate: 3
 paginate_path: "/blog/page:num/"
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -10,14 +10,11 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Soot Spirits
-tagline: Code, Science, Philosophy, Humor
+title : Start WebSite - блог о разработке сайтов
+tagline: Code, Development, Website, Frontend
 author :
-  name : Abhishek Nagekar
-  email : abhishek@nagekar.com
-  github : abhn
-  twitter : abhisheknagekar
-  feedburner : AbhishekN
+  name : Start Website
+  github : start-website
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -27,7 +24,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://www.nagekar.com
+production_url : https://start-website.github.io/
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -84,7 +81,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : nagekar
+      short_name : start-website
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
