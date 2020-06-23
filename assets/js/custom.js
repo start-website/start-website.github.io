@@ -12,20 +12,20 @@ function toggleNav() {
 }
 
 // for the random quote in the header
-var txtFile = new XMLHttpRequest();
-txtFile.open("GET", "/quotes.txt", true);
-txtFile.onreadystatechange = function () {
-    if (txtFile.readyState === 4) {
-        if (txtFile.status === 200) {
-            allText = txtFile.responseText;
-            lines = txtFile.responseText.split("\n");
-            randLine = lines[Math.floor((Math.random() * lines.length) + 1)];
-            document.getElementById('quote').innerHTML = randLine ||
-                "Intelligence is the ability to adapt to change."; // fallback quote
-        }
-    }
-};
-txtFile.send(null);
+// var txtFile = new XMLHttpRequest();
+// txtFile.open("GET", "/quotes.txt", true);
+// txtFile.onreadystatechange = function () {
+//     if (txtFile.readyState === 4) {
+//         if (txtFile.status === 200) {
+//             allText = txtFile.responseText;
+//             lines = txtFile.responseText.split("\n");
+//             randLine = lines[Math.floor((Math.random() * lines.length) + 1)];
+//             document.getElementById('quote').innerHTML = randLine ||
+//                 "Intelligence is the ability to adapt to change."; // fallback quote
+//         }
+//     }
+// };
+// txtFile.send(null);
 
 document.getElementById("search-text").addEventListener("keydown", function(e) {
     // search
